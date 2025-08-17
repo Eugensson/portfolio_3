@@ -20,7 +20,8 @@
     color: transparent;
   }
 
-  .group:hover .text-outline {
+  .group:hover .text-outline,
+  .group:active .text-outline {
     -webkit-text-stroke: 1px #00ff99;
   }
 }

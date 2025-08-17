@@ -1,25 +1,17 @@
 import {
   FaHtml5,
   FaCss3,
-  FaJs,
   FaReact,
   FaNodeJs,
   FaFigma,
-  FaIdBadge,
-  FaUniversity,
   FaGitAlt,
   FaGithub,
   FaLinkedinIn,
   FaTelegramPlane,
+  FaJs,
 } from "react-icons/fa";
-import {
-  SiTailwindcss,
-  SiNextdotjs,
-  SiCloudinary,
-  SiMongodb,
-  SiExpress,
-} from "react-icons/si";
 import { FaXTwitter } from "react-icons/fa6";
+import { SiTailwindcss, SiNextdotjs, SiTypescript } from "react-icons/si";
 
 export const NAV_LINKS = [
   { name: "home", path: "/" },
@@ -91,7 +83,6 @@ export const SERVICE_LIST = [
 ];
 
 export const ABOUT_DATA = {
-  icon: FaIdBadge,
   title: "About me",
   description:
     "I’m a highly motivated and detail-oriented software engineer with over 12 years of professional experience. My focus is on building scalable web applications, creating efficient solutions, and continuously learning new technologies. I enjoy collaborating with teams, solving complex problems, and turning ideas into impactful digital products.",
@@ -101,12 +92,12 @@ export const ABOUT_DATA = {
     { fieldName: "Email", fieldValue: "luke.coleman@email.com" },
     { fieldName: "Experience", fieldValue: "12+ Years" },
     { fieldName: "Freelance", fieldValue: "Available" },
-    { fieldName: "Languages", fieldValue: "En, De" },
+    { fieldName: "Languages", fieldValue: "English, German" },
   ],
 };
 
 export const EXPERIENCE_DATA = {
-  icon: FaIdBadge,
+  icon: "/assets/resume/badge.svg",
   title: "My experience",
   description:
     "I have gained practical experience working on full-stack web projects, developing responsive interfaces and integrating APIs to deliver user-friendly applications.",
@@ -135,7 +126,7 @@ export const EXPERIENCE_DATA = {
 };
 
 export const EDUCATION_DATA = {
-  icon: FaUniversity,
+  icon: "/assets/resume/cap.svg",
   title: "My education",
   description:
     "Throughout my academic journey I’ve gained both theoretical knowledge and practical experience in software development, design, and modern web technologies. My education provided a strong foundation that I continue to build on through projects and continuous learning.",
@@ -182,7 +173,11 @@ export const SKILLS_DATA = {
     },
     {
       icon: FaJs,
-      name: "javascrypt",
+      name: "javascript",
+    },
+    {
+      icon: SiTypescript,
+      name: "typescript",
     },
     {
       icon: FaReact,
@@ -197,20 +192,8 @@ export const SKILLS_DATA = {
       name: "node.js",
     },
     {
-      icon: SiExpress,
-      name: "express",
-    },
-    {
-      icon: SiMongodb,
-      name: "mongoDB",
-    },
-    {
       icon: FaGitAlt,
       name: "git",
-    },
-    {
-      icon: SiCloudinary,
-      name: "cloudinary",
     },
     {
       icon: FaFigma,
@@ -218,3 +201,39 @@ export const SKILLS_DATA = {
     },
   ],
 };
+
+export const PROJECT_LIST = [
+  {
+    num: "01",
+    category: "frontend",
+    title: "project 1",
+    description:
+      "Responsive frontend project delivering dynamic interfaces, smooth interactions, and visually engaging user experience.",
+    stack: [{ name: "HTML 5" }, { name: "CSS 3" }, { name: "Javascript" }],
+    image: "/assets/work/thumb1.jpg",
+    live: "",
+    github: "",
+  },
+  {
+    num: "02",
+    category: "fullstack",
+    title: "Project 2",
+    description:
+      "Fullstack application combining scalable backend with elegant frontend for fast, reliable, and interactive experiences.",
+    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
+    image: "/assets/work/thumb2.jpg",
+    live: "",
+    github: "",
+  },
+  {
+    num: "03",
+    category: "fullstack",
+    title: "Project 3",
+    description:
+      "Modern web project integrating frontend and backend, providing seamless navigation, performance, and clean interface.",
+    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
+    image: "/assets/work/thumb3.jpg",
+    live: "",
+    github: "",
+  },
+];

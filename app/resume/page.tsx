@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Metadata } from "next";
 import * as motion from "motion/react-client";
 
@@ -44,7 +45,17 @@ const Resume = () => {
         <div className="w-full h-full">
           <TabsContent value="experience" className="w-full">
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
-              <h3 className="text-4xl font-bold">{EXPERIENCE_DATA.title}</h3>
+              <div className="flex items-center gap-4">
+                <Image
+                  src={EXPERIENCE_DATA.icon}
+                  alt="Experience icon"
+                  width={40}
+                  height={40}
+                  priority
+                  className="object-contain aspect-square"
+                />
+                <h3 className="text-4xl font-bold">{EXPERIENCE_DATA.title}</h3>
+              </div>
               <p className="max-w-200 text-white/60 mx-auto xl:mx-0">
                 {EXPERIENCE_DATA.description}
               </p>
@@ -74,7 +85,17 @@ const Resume = () => {
 
           <TabsContent value="education" className="w-full">
             <div className="flex flex-col gap-5 text-center xl:text-left">
-              <h3 className="text-4xl font-bold">{EDUCATION_DATA.title}</h3>
+              <div className="flex items-center gap-4">
+                <Image
+                  src={EDUCATION_DATA.icon}
+                  alt="Experience icon"
+                  width={40}
+                  height={40}
+                  priority
+                  className="object-contain aspect-square"
+                />
+                <h3 className="text-4xl font-bold">{EDUCATION_DATA.title}</h3>
+              </div>
               <p className="max-w-200 text-white/60 mx-auto xl:mx-0">
                 {EDUCATION_DATA.description}
               </p>
@@ -111,14 +132,14 @@ const Resume = () => {
                 </p>
               </div>
               <ScrollArea className="h-80 pr-4">
-                <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+                <ul className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-5 gap-4">
                   {SKILLS_DATA.skillList.map(({ icon: Icon, name }) => (
                     <li key={name}>
                       <TooltipProvider delayDuration={100}>
                         <Tooltip>
                           <TooltipTrigger className="w-full h-[150px] bg-[#232329] rounded-xl flex justify-center items-center group">
-                            <div className="text-6xl group-hover:text-accent transition-all duration-300">
-                              <Icon />
+                            <div className="group-hover:text-accent transition-all duration-300">
+                              <Icon size={50} />
                             </div>
                           </TooltipTrigger>
                           <TooltipContent>

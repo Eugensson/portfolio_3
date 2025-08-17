@@ -31,12 +31,12 @@ const Services = () => {
               </p>
               <Link
                 href={href}
-                className="flex justify-center items-center size-17.5 rounded-full bg-white group-hover:bg-accent hover:-rotate-45 transition-all duration-500"
+                className="flex justify-center items-center size-17.5 rounded-full bg-white group-hover:bg-accent group-active:bg-accent hover:-rotate-45 active:-rotate-45 transition-all duration-500"
               >
                 <BsArrowDownRight className="text-primary text-3xl" />
               </Link>
             </div>
-            <h2 className="h2 font-bold leading-none text-white group-hover:text-accent transition-all duration-500">
+            <h2 className="h2 font-bold leading-none text-white group-hover:text-accent group-active:text-accent transition-all duration-500">
               {title}
             </h2>
             <p className="text-white/60">{description}</p>
