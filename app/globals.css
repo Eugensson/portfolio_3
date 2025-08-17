@@ -14,6 +14,17 @@
   --font-primary: "JetBrains Mono";
 }
 
+@layer utilities {
+  .text-outline {
+    -webkit-text-stroke: 1px #ffffff;
+    color: transparent;
+  }
+
+  .group:hover .text-outline {
+    -webkit-text-stroke: 1px #00ff99;
+  }
+}
+
 body {
   @apply font-primary bg-primary text-white leading-loose;
 }
@@ -32,12 +43,4 @@ body {
 
 .container {
   @apply px-3.75 mx-auto max-w-300;
-}
-
-.text-outline {
-  -webkit-text-stroke: 1px #ffffff;
-}
-
-.text-outline-hover {
-  -webkit-text-stroke: 1px #00ff99;
 }

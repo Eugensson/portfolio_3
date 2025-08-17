@@ -38,3 +38,34 @@ export const STAT_LIST = [
   { num: 8, text: "Technologies mastered" },
   { num: 500, text: "Code commits" },
 ];
+
+export const SERVICE_LIST = [
+  {
+    num: "01",
+    title: "Web Development",
+    description:
+      "Building responsive and high-performing websites tailored to your needs.",
+    href: "",
+  },
+  {
+    num: "02",
+    title: "UI/UX Design",
+    description:
+      "Designing intuitive and engaging interfaces that enhance user experience.",
+    href: "",
+  },
+  {
+    num: "03",
+    title: "Logo Design",
+    description:
+      "Creating memorable and versatile logos that capture your brand identity.",
+    href: "",
+  },
+  {
+    num: "04",
+    title: "SEO",
+    description:
+      "Optimizing your website to rank higher on search engines and attract traffic.",
+    href: "",
+  },
+];
