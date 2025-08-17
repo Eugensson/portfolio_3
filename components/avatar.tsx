@@ -17,7 +17,7 @@ export const Avatar = () => {
             opacity: 1,
             transition: { delay: 2.4, duration: 0.4, ease: "easeInOut" },
           }}
-          className="absolute w-74.5 h-74.5 xl:w-124.5 xl:h-124.5 mix-blend-lighten"
+          className="absolute size-48 xl:size-98 mix-blend-lighten"
         >
           <Image
             src="/assets/photo.png"
@@ -30,7 +30,7 @@ export const Avatar = () => {
         </motion.div>
 
         <motion.svg
-          className="w-75 h-75 xl:w-126.5 xl:h-126.5"
+          className="size-50 xl:size-100"
           fill="transparent"
           viewBox="0 0 506 506"
           xmlns="http://www.w3.org/2000/svg"

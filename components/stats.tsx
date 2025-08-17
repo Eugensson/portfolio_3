@@ -7,8 +7,8 @@ import { STAT_LIST } from "@/constants";
 
 export const Stats = () => {
   return (
-    <section className="pt-4 pb-12 xl:py-0">
-      <ul className="container flex flex-wrap gap-8">
+    <section className="pt-4 pb-8 xl:py-0">
+      <ul className="container flex flex-wrap gap-5">
         {STAT_LIST.map(({ num, text }, index) => (
           <li
             key={index}

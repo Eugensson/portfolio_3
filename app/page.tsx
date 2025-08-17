@@ -9,15 +9,15 @@ const Home = () => {
   return (
     <section className="h-full">
       <div className="container h-full">
-        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
+        <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-12">
           <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Software Developer</span>
-            <h1 className="h1 mb-6">
+            <h1 className="h1 mb-5">
               Helo!&nbsp;I&apos;m
               <br />
               <span className="text-accent">Luke Coleman</span>
             </h1>
-            <p className="max-w-125 mb-9 text-white/80">
+            <p className="max-w-140 mb-5 text-sm xl:text-base text-white/80">
               I create clean and elegant digital experiences and know a variety
               of programming languages and technologies.
             </p>
