@@ -18,18 +18,6 @@ body {
   @apply font-primary bg-primary text-white leading-loose;
 }
 
-.h1 {
-  @apply text-[24px] xl:text-[48px] leading-[1.1] font-semibold;
-}
-
-.h2 {
-  @apply text-[20px] xl:text-[40px] leading-[1.1] font-semibold;
-}
-
-.h3 {
-  @apply text-[16px] xl:text-[32px] leading-[1.1] font-semibold;
-}
-
 .container {
   @apply px-3.75 mx-auto max-w-300;
 }

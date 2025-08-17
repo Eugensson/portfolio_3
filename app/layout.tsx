@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
+
+import { Header } from "@/components/header";
+import { PageTransition } from "@/components/page-transition";
+
 import "./globals.css";
+import { StairTransition } from "@/components/stair-transition";
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ["latin", "cyrillic"],
@@ -25,7 +30,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${jetbrainsMono.variable} antialiased overflow-hidden`}>
-        {children}
+        <Header />
+        <StairTransition />
+        <PageTransition>{children}</PageTransition>
       </body>
     </html>
   );
