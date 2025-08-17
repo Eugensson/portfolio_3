@@ -9,6 +9,9 @@ import {
   FaLinkedinIn,
   FaTelegramPlane,
   FaJs,
+  FaPhoneAlt,
+  FaEnvelope,
+  FaMapMarkerAlt,
 } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { SiTailwindcss, SiNextdotjs, SiTypescript } from "react-icons/si";
@@ -235,5 +238,23 @@ export const PROJECT_LIST = [
     image: "/assets/work/thumb3.jpg",
     live: "",
     github: "",
+  },
+];
+
+export const INFO_LIST = [
+  {
+    icon: FaPhoneAlt,
+    title: "Phone",
+    description: "+49 123 456 7890",
+  },
+  {
+    icon: FaEnvelope,
+    title: "Email",
+    description: "luke.coleman@email.com",
+  },
+  {
+    icon: FaMapMarkerAlt,
+    title: "Location",
+    description: "Berlin, Germany",
   },
 ];
