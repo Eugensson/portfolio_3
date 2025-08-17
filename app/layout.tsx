@@ -15,11 +15,11 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Luke Connor's portfolio",
-    template: "%s - Luke Connor's portfolio",
+    default: "Luke Coleman's Portfolio",
+    template: "%s - Luke Coleman's Portfolio",
   },
   description:
-    "Explore Luke Connor's portfolio showcasing modern web development, creative design, and innovative digital solutions. Discover projects, skills, and experience in building high-quality applications.",
+    "Explore Luke Coleman's portfolio showcasing modern web development, creative design, and innovative digital solutions. Discover projects, skills, and experience in building high-quality applications.",
 };
 
 export default function RootLayout({
@@ -29,7 +29,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${jetbrainsMono.variable} antialiased overflow-hidden`}>
+      <body className={`${jetbrainsMono.variable} antialiased`}>
         <Header />
         <StairTransition />
         <PageTransition>{children}</PageTransition>
